@@ -1,8 +1,10 @@
 import React, { ChangeEvent, useState } from 'react'
 import './App.css'
 
+const DEFAULT_SONG_ID = '0dINQNECUzmrGu6hYRiNPx'
+
 const App = () => {
-    const [songId, setSongId] = useState('0dINQNECUzmrGu6hYRiNPx')
+    const [songId, setSongId] = useState(DEFAULT_SONG_ID)
 
     const updateSong = (event: ChangeEvent<HTMLInputElement>) => {
         const spotifyURI = event.target.value
@@ -10,6 +12,8 @@ const App = () => {
 
         if (res && res.length === 2) {
             setSongId(res[1])
+        } else if (event.target.value === '') {
+            setSongId(DEFAULT_SONG_ID)
         } else {
             console.log('invalid song ID', spotifyURI, res)
         }
@@ -23,10 +27,12 @@ const App = () => {
                 </label>
                 <input
                     type="text"
+                    placeholder={'spotify:track:' + DEFAULT_SONG_ID}
                     name="spotify-uri"
                     id="spotify-uri"
                     autoFocus
                     onChange={updateSong}
+                    onFocus={(event) => event.target.select()}
                 />
             </div>
             {songId ? (
