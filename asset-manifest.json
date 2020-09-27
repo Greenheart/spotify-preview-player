@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.416ba9f3.chunk.css",
-    "main.js": "/static/js/main.d2f01364.chunk.js",
-    "main.js.map": "/static/js/main.d2f01364.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.637c3a39.js",
-    "runtime-main.js.map": "/static/js/runtime-main.637c3a39.js.map",
-    "static/js/2.713d8aef.chunk.js": "/static/js/2.713d8aef.chunk.js",
-    "static/js/2.713d8aef.chunk.js.map": "/static/js/2.713d8aef.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.69f232a1941517a806caaaf14f88fe92.js": "/precache-manifest.69f232a1941517a806caaaf14f88fe92.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.416ba9f3.chunk.css.map": "/static/css/main.416ba9f3.chunk.css.map",
-    "static/js/2.713d8aef.chunk.js.LICENSE.txt": "/static/js/2.713d8aef.chunk.js.LICENSE.txt"
+    "main.css": "/spotify-preview-player/static/css/main.416ba9f3.chunk.css",
+    "main.js": "/spotify-preview-player/static/js/main.d2f01364.chunk.js",
+    "main.js.map": "/spotify-preview-player/static/js/main.d2f01364.chunk.js.map",
+    "runtime-main.js": "/spotify-preview-player/static/js/runtime-main.14b9d103.js",
+    "runtime-main.js.map": "/spotify-preview-player/static/js/runtime-main.14b9d103.js.map",
+    "static/js/2.713d8aef.chunk.js": "/spotify-preview-player/static/js/2.713d8aef.chunk.js",
+    "static/js/2.713d8aef.chunk.js.map": "/spotify-preview-player/static/js/2.713d8aef.chunk.js.map",
+    "index.html": "/spotify-preview-player/index.html",
+    "precache-manifest.142fad814da29c06c01fd543da7980ce.js": "/spotify-preview-player/precache-manifest.142fad814da29c06c01fd543da7980ce.js",
+    "service-worker.js": "/spotify-preview-player/service-worker.js",
+    "static/css/main.416ba9f3.chunk.css.map": "/spotify-preview-player/static/css/main.416ba9f3.chunk.css.map",
+    "static/js/2.713d8aef.chunk.js.LICENSE.txt": "/spotify-preview-player/static/js/2.713d8aef.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.637c3a39.js",
+    "static/js/runtime-main.14b9d103.js",
     "static/js/2.713d8aef.chunk.js",
     "static/css/main.416ba9f3.chunk.css",
     "static/js/main.d2f01364.chunk.js"
