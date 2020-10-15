@@ -13,6 +13,7 @@ const App = () => {
 
         if (match && match.length === 2) {
             setSongId(match[1])
+            event.target.value = 'https://open.spotify.com/track/' + match[1]
         } else if (event.target.value === '') {
             setSongId(DEFAULT_SONG_ID)
         } else {
