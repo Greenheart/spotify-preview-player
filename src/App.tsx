@@ -8,7 +8,7 @@ const App = () => {
 
     const updateSong = (event: ChangeEvent<HTMLInputElement>) => {
         const spotifyURI = event.target.value
-        const res = spotifyURI.split('spotify:track:')
+        const res = spotifyURI.split('track/')
 
         if (res && res.length === 2) {
             setSongId(res[1])
@@ -23,11 +23,13 @@ const App = () => {
         <div className="App">
             <div className="uri-input">
                 <label htmlFor="spotify-uri">
-                    Enter a Spotify URI to preview:
+                    Enter a Spotify Song Link to preview:
                 </label>
                 <input
                     type="text"
-                    placeholder={'spotify:track:' + DEFAULT_SONG_ID}
+                    placeholder={
+                        'https://open.spotify.com/track/' + DEFAULT_SONG_ID
+                    }
                     name="spotify-uri"
                     id="spotify-uri"
                     autoFocus
