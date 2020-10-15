@@ -7,22 +7,23 @@ const App = () => {
     const [songId, setSongId] = useState(DEFAULT_SONG_ID)
 
     const updateSong = (event: ChangeEvent<HTMLInputElement>) => {
-        const spotifyURI = event.target.value
-        const res = spotifyURI.split('track/')
+        const match = event.target.value.match(
+            /https:\/\/open.spotify.com\/track\/(.+)\?si=/
+        )
 
-        if (res && res.length === 2) {
-            setSongId(res[1])
+        if (match && match.length === 2) {
+            setSongId(match[1])
         } else if (event.target.value === '') {
             setSongId(DEFAULT_SONG_ID)
         } else {
-            console.log('invalid song ID', spotifyURI, res)
+            console.log('invalid song ID', event.target.value, match)
         }
     }
 
     return (
         <div className="App">
-            <div className="uri-input">
-                <label htmlFor="spotify-uri">
+            <div className="song-input">
+                <label htmlFor="spotify-link">
                     Enter a Spotify Song Link to preview:
                 </label>
                 <input
@@ -30,8 +31,8 @@ const App = () => {
                     placeholder={
                         'https://open.spotify.com/track/' + DEFAULT_SONG_ID
                     }
-                    name="spotify-uri"
-                    id="spotify-uri"
+                    name="spotify-link"
+                    id="spotify-link"
                     autoFocus
                     onChange={updateSong}
                     onFocus={(event) => event.target.select()}

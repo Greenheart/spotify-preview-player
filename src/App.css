@@ -7,17 +7,17 @@
     align-items: center;
 }
 
-.uri-input {
+.song-input {
     display: flex;
     flex-direction: column;
     padding: 32px;
     font-size: 1.2rem;
 }
 
-.uri-input label {
+.song-input label {
     padding: 16px;
 }
 
-.uri-input input {
+.song-input input {
     padding: 8px;
 }
